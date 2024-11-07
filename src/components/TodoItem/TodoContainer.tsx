@@ -1,18 +1,14 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable react-hooks/exhaustive-deps */
 import { TodoType } from "../../lib/types/TodoTypes";
 import styles from "./TodoItem.module.css";
 import TodoItem from "./TodoItem";
 import {
-  ItemRenderProps,
   SortableItem,
   SortableItemProps,
   SortableList,
 } from "@thaddeusjiang/react-sortable-list";
 import { memo, useEffect, useState } from "react";
-import { useAppDispatch, useAppSelector } from "../../lib/hooks/hooks";
-import { replaceAllTodos, selectTodos } from "../../store/slices/todoSlice";
-// import { memo } from "react";
+import { useAppDispatch } from "../../lib/hooks/hooks";
+import { replaceAllTodos } from "../../store/slices/todoSlice";
 
 type Props = {
   displayedTodos: TodoType[];
@@ -20,8 +16,7 @@ type Props = {
   filter: string;
 };
 
-const TodoContainer = ({ displayedTodos, search, filter }: Props) => {
-  const todos = useAppSelector(selectTodos);
+const TodoContainer = ({ displayedTodos }: Props) => {
   const dispatch = useAppDispatch();
   const [items, setItems] = useState<SortableItemProps[]>([]);
 

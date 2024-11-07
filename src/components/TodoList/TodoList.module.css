@@ -1,14 +1,15 @@
 .container {
   display: flex;
   flex-direction: column;
-
+  flex: 1;
   background-color: var(--background);
   color: var(--text-primary);
-  padding: 40px 60px 24px;
+  padding: 40px 28px 24px;
 }
 
 .title {
   margin-bottom: 16px;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
 }
@@ -47,8 +48,18 @@
     flex: 1;
   }
 
+  .title {
+    font-size: 24px;
+  }
+
   .filter {
     flex-direction: row;
     gap: 16px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .container {
+    padding: 40px 60px 24px;
   }
 }

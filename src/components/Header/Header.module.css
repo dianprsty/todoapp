@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
 
@@ -12,6 +12,10 @@
   border-bottom: 1px solid var(--border);
   background-color: var(--background);
   color: var(--text-primary);
+}
+
+.header h1 {
+  font-size: 20px;
 }
 
 .title {
@@ -45,5 +49,6 @@
 @media screen and (min-width: 768px) {
   .header {
     padding: 12px 60px;
+    font-size: 32px;
   }
 }

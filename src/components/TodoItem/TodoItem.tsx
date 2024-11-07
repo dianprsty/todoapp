@@ -18,31 +18,33 @@ const TodoItem = ({ todo }: { todo: TodoType }) => {
 
   return (
     <li className={styles.list_item}>
-      <input
-        className={styles.checkbox}
-        id="checkbox_status"
-        type="checkbox"
-        checked={todo.status === "completed"}
-        onChange={() => {
-          dispatch(
-            editTodo({
-              ...todo,
-              status: todo.status === "active" ? "completed" : "active",
-            })
-          );
-        }}
-      />
-      <label htmlFor="checkbox_status">{todo.title}</label>
-      <span
-        className={`${styles.status} ${
-          todo.status === "completed"
-            ? styles.status_completed
-            : styles.status_active
-        }`}
-      >
-        {todo.status}
-      </span>
+      <label htmlFor={`checkbox_status_${todo.id}`}>
+        <input
+          className={styles.checkbox}
+          id={`checkbox_status_${todo.id}`}
+          type="checkbox"
+          checked={todo.status === "completed"}
+          onChange={() => {
+            dispatch(
+              editTodo({
+                ...todo,
+                status: todo.status === "active" ? "completed" : "active",
+              })
+            );
+          }}
+        />
+        <p className={styles.todo_title}>{todo.title}</p>
+      </label>
       <span className={styles.action_group}>
+        <span
+          className={`${styles.status} ${
+            todo.status === "completed"
+              ? styles.status_completed
+              : styles.status_active
+          }`}
+        >
+          {todo.status}
+        </span>
         <button
           className={styles.btn_view}
           onClick={() => router(`/${todo.id}`)}

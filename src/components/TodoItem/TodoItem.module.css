@@ -19,8 +19,9 @@
   list-style: none;
 
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 16px;
   padding: 16px 32px 16px 60px;
   border-radius: 8px;
@@ -30,6 +31,13 @@
   box-shadow: 0 0 2px var(--silver);
 
   font-size: 16px;
+}
+
+.todo_title {
+  text-overflow: clip;
+
+  display: inline;
+  width: 100%;
 }
 
 .status {
@@ -96,4 +104,5 @@
   cursor: pointer;
   width: 18px;
   height: 18px;
+  margin-right: 16px;
 }

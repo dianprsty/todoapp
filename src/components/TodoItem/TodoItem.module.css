@@ -106,3 +106,9 @@
   height: 18px;
   margin-right: 16px;
 }
+
+@media screen and (min-width: 768px) {
+  .list_item {
+    flex-direction: row;
+  }
+}

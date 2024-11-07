@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  color: var(--text-primary);
+  padding: 40px 60px 24px;
+}
+
+.title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.input {
+  margin-bottom: 16px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 16px;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+
+.textarea {
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 16px;
+  resize: vertical;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+
+.button {
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  font-size: 16px;
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: small;
+}
+
+.button_outlined {
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    width: 30%;
+  }
+}

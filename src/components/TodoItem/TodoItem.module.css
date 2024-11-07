@@ -1,0 +1,99 @@
+.list_container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.no_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  box-shadow: 0 0 2px var(--silver);
+}
+
+.list_item {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 32px 16px 60px;
+  border-radius: 8px;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+  box-shadow: 0 0 2px var(--silver);
+
+  font-size: 16px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  padding: 0px 8px;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status_active {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+.status_completed {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.action_group {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+
+.action_group button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action_group button img {
+  width: 16px;
+}
+
+.action_group button img path {
+  fill: white;
+}
+
+.btn_delete {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.btn_edit {
+  background-color: var(--success);
+  color: var(--white);
+}
+
+.btn_view {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.checkbox {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}

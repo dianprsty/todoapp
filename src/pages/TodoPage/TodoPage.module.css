@@ -1,0 +1,27 @@
+.todo_page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex: 1;
+    flex-direction: row;
+    justify-content: start;
+  }
+  .divider {
+    display: block;
+    width: 1px;
+    background-color: var(--silver);
+  }
+}

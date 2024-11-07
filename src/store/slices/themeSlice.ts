@@ -8,9 +8,9 @@ interface ThemeState {
 
 const initialState: ThemeState = {
   value:
-    localStorage.getItem(constants.THEME_STORE_KEY) === "light"
-      ? "light"
-      : "dark",
+    localStorage.getItem(constants.THEME_STORE_KEY) === "dark"
+      ? "dark"
+      : "light",
 };
 
 export const themeSlice = createSlice({

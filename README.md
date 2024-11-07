@@ -4,6 +4,12 @@
 
 Aplikasi to do app yang dibuat menggunakan react typesript
 
+## Deployment
+
+You can see the live site of this project from
+
+https://besttodoapp-bydian.vercel.app/
+
 ## Installation
 
 ### Prerequisites

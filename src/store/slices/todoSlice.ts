@@ -32,7 +32,6 @@ export const todoSlice = createSlice({
     },
     removeTodo: (state, action: PayloadAction<number>) => {
       state.todos = state.todos.filter((todo) => todo.id !== action.payload);
-      console.log(state.todos);
 
       saveTodosToLocalStorage(state.todos);
     },

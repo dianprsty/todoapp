@@ -86,6 +86,11 @@ const TodoContainer = ({ displayedTodos }: Props) => {
       dispatch(replaceAllTodos(newOrder));
     }
   }, [items, dispatch]);
+
+  if (items.length === 0) {
+    return <div className={styles.no_item}>There's Nothing Todo</div>;
+  }
+
   return (
     <div className={styles.list_container}>
       <SortableList items={items} setItems={setItems}>

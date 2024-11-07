@@ -47,7 +47,6 @@ const TodoForm = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(todo);
 
     try {
       if (!todo.title) {

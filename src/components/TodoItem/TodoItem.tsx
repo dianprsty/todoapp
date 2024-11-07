@@ -45,7 +45,7 @@ const TodoItem = ({ todo }: { todo: TodoType }) => {
       <span className={styles.action_group}>
         <button
           className={styles.btn_view}
-          onClick={() => router(`/todo/${todo.id}`)}
+          onClick={() => router(`/${todo.id}`)}
         >
           <img src="/icons/eye.svg" alt="view" />
         </button>

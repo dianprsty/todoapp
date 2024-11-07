@@ -7,7 +7,10 @@ const Header = () => {
   const dispatch = useAppDispatch();
   return (
     <header className={styles.header}>
-      <img src="/logo.png" alt="logo" width={32} /> <h1>Best Todo App</h1>
+      <img src="/logo.png" alt="logo" width={32} />{" "}
+      <h1>
+        <a className={styles.title}>Best Todo App</a>
+      </h1>
       <div className={styles.theme}>
         <img
           src="/icons/moon.svg"

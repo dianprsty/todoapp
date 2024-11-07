@@ -41,7 +41,7 @@ npm run dev
 yarn dev
 ```
 
-Open http://localhost:3000 to view the application in your browser.
+Open http://localhost:5173 to view the application in your browser.
 
 ### Building for Production
 

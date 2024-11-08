@@ -119,6 +119,7 @@ const TodoForm = () => {
             type="text"
             name="title"
             id="title"
+            placeholder="Title"
             value={todo.title}
             onChange={handleChange}
           />
@@ -126,6 +127,7 @@ const TodoForm = () => {
             className={styles.textarea}
             name="description"
             id="description"
+            placeholder="description"
             value={todo.description}
             cols={30}
             rows={10}

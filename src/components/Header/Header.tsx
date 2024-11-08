@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../lib/hooks/hooks";
 import { toogleTheme } from "../../store/slices/themeSlice";
 import styles from "./Header.module.css";
@@ -9,7 +10,9 @@ const Header = () => {
     <header className={styles.header}>
       <img src="/logo.png" alt="logo" width={32} />{" "}
       <h1>
-        <a className={styles.title}>Best Todo App</a>
+        <Link to={"/"} className={styles.title}>
+          Best Todo App
+        </Link>
       </h1>
       <div className={styles.theme}>
         <img
